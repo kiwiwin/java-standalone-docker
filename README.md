@@ -31,16 +31,16 @@ run built image will generate a config file under the root of classpath:
 
 ###prop-reader
 
-1. generate Dockerfile
+generate Dockerfile
 
 	./gen.sh examples/archives/original.jar org.kiwi.prop.reader.PropReader examples/prop-reader
 
-2. build image
+build image
 
 	cd examples/prop-reader
 	docker build -t "kiwiwin/prop-reader"
 
-3. run
+run
 	
 	docker run -it -e APP_REDIS_PROPS_REDIS_HOST=localhost -e APP_REDIS_PROPS_REDIS_PORT=6379 kiwiwin/prop-reader redis.properties redis.host redis.port
 
