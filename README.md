@@ -27,6 +27,11 @@ run built image will generate a config file under the root of classpath:
 	name: <FILENAME>
 	<KEY>=<VALUE>
 
+Example: if you run with the built image with environmet variable *APP_TOPIC_COMMAND_KAFKA_PROPS_BOOTSTRAP_SERVERS*, whose value is *localhost:9200*, then you will have a propert file *topic.command.kafka.properties* under root of the standalone java application classpath, with content
+
+	bootstrap.servers=localhost:9200
+
+
 ##Examples
 
 ###prop-reader
