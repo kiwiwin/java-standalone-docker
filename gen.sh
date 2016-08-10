@@ -11,7 +11,7 @@ fi
 targetDirectory="${3:-.}"
 
 #copy app.jar
-cp $1 $targetDirectory/
+cp $1 $targetDirectory/app.jar
 
 #copy dockerfile needed files
 mkdir -p $targetDirectory/config
